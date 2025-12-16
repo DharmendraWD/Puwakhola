@@ -2,6 +2,14 @@
 "use client";
 import { ArrowRight, Zap } from 'lucide-react';
 import { ImageWithFallback } from '@/components/ImageWithFallback';
+import Link from 'next/link';
+import img1 from "../../../public/img/gallary/1.png";
+import img2 from "../../../public/img/gallary/2.png";
+import img3 from "../../../public/img/gallary/3.png";
+import img4 from "../../../public/img/gallary/4.png";
+
+import { GrGallery } from "react-icons/gr";
+import { FaPeopleRoof } from "react-icons/fa6";
 
  function HeroSection() {
   return (
@@ -27,23 +35,25 @@ import { ImageWithFallback } from '@/components/ImageWithFallback';
             </h1>
             
             <p className="text-xl text-gray-600 leading-relaxed">
-              Leading the way in clean, renewable hydroelectric energy. We transform the mighty rivers of Nepal into sustainable power that lights up communities and drives progress.
+             Puwa Khola-One Hydropower Limited is a pioneering entity dedicated to harnessing the power of renewable energy to drive sustainable development. Established with a vision to contribute to the energy landscape while prioritizing environmental stewardship and community prosperity.
             </p>
             
             <div className="flex flex-wrap gap-4">
-              <button className="px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-500 text-white rounded-full hover:shadow-xl transition-all duration-300 flex items-center gap-2 group">
-                Explore Our Projects
+              <Link href="#about" className="px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-500 text-white rounded-full hover:shadow-xl transition-all duration-300 flex items-center gap-2 group">
+              <FaPeopleRoof />  About Us
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </button>
-              <button className="px-8 py-4 border-2 border-blue-600 text-blue-600 rounded-full hover:bg-blue-50 transition-all duration-300">
-                Learn More
-              </button>
+              </Link>
+              <Link href="#gallery" className="px-8 py-4 bg-gradient-to-r from-purple-600 to-cyan-500 text-white rounded-full hover:shadow-xl transition-all duration-300 flex items-center gap-2 group">
+              <GrGallery />  Gallery
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Link>
+             
             </div>
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 pt-8">
               <div>
-                <div className="text-3xl text-blue-600">50+</div>
+                <div className="text-3xl text-blue-600">4MW</div>
                 <div className="text-sm text-gray-600">MW Capacity</div>
               </div>
               <div>
@@ -63,14 +73,14 @@ import { ImageWithFallback } from '@/components/ImageWithFallback';
               <div className="space-y-4">
                 <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-xl">
                   <ImageWithFallback
-                    src="https://images.unsplash.com/photo-1705747894609-6a7d17a8cfb7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoeWRyb2VsZWN0cmljJTIwZGFtfGVufDF8fHx8MTc2NTI4MTQ5MHww&ixlib=rb-4.1.0&q=80&w=1080"
+                    src={img1.src}
                     alt="Hydroelectric Dam"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
                   <ImageWithFallback
-                    src="https://images.unsplash.com/photo-1738918922725-d70c666ddccb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoeWRyb3Bvd2VyJTIwdHVyYmluZXxlbnwxfHx8fDE3NjUzNTA4NTd8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                    src={img2.src}
                     alt="Hydropower Turbine"
                     className="w-full h-full object-cover"
                   />
@@ -79,14 +89,14 @@ import { ImageWithFallback } from '@/components/ImageWithFallback';
               <div className="space-y-4 pt-8">
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
                   <ImageWithFallback
-                    src="https://images.unsplash.com/photo-1641584511182-094468c129ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb3VudGFpbiUyMHJpdmVyJTIwbmVwYWx8ZW58MXx8fHwxNzY1MzUwODU3fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                    src={img3.src}
                     alt="Mountain River"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-xl">
                   <ImageWithFallback
-                    src="https://images.unsplash.com/photo-1763312181367-6b4db7a9811d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZW5ld2FibGUlMjBlbmVyZ3klMjB3YXRlcnxlbnwxfHx8fDE3NjUzNTA4NTd8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                    src={img4.src}
                     alt="Renewable Energy"
                     className="w-full h-full object-cover"
                   />

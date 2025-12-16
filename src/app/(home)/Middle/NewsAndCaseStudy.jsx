@@ -1,5 +1,6 @@
 import { ImageWithFallback } from '@/components/ImageWithFallback';
 import { Calendar, ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
  function NewsSection() {
   const news = [
@@ -77,20 +78,20 @@ import { Calendar, ArrowRight } from 'lucide-react';
                   {article.excerpt}
                 </p>
                 
-                <button className="flex items-center gap-2 text-blue-600 group-hover:gap-3 transition-all">
+                <Link href={`/blog/${article.id}`} className="flex items-center gap-2 text-blue-600 group-hover:gap-3 transition-all">
                   Read More
                   <ArrowRight className="w-4 h-4" />
-                </button>
+                </Link>
               </div>
             </article>
           ))}
         </div>
-
+{/* 
         <div className="text-center mt-12">
           <button className="px-8 py-4 border-2 border-blue-600 text-blue-600 rounded-full hover:bg-blue-600 hover:text-white transition-all duration-300">
             View All News
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   );

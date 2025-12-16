@@ -1,6 +1,9 @@
 "use client";
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import logo from "../../../../public/logo.jpeg"
+import Image from 'next/image';
+import Link from 'next/link';
 
  function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -10,7 +13,7 @@ import { useState } from 'react';
     { label: 'About Us', href: '#about' },
     { label: 'Projects', href: '#projects' },
     { label: 'Our Team', href: '#team' },
-    { label: 'News', href: '#news' },
+    { label: 'Gallery', href: '#gallery' },
   ];
 
   return (
@@ -19,14 +22,14 @@ import { useState } from 'react';
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-cyan-500 rounded-lg flex items-center justify-center">
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
+            <Link href="/" className="flex items-center gap-3">
+              <div className="w-16 h-16   flex items-center justify-center">
+                <Image src={logo.src} className='rounded-xl' alt="Logo" width={100} height={100} />
               </div>
-              <span className="text-xl text-gray-900">Puwakhola Hydropower</span>
-            </div>
+              <span className="text-xl text-gray-900">
+                Puwakhola
+                </span>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
@@ -40,9 +43,9 @@ import { useState } from 'react';
                 {link.label}
               </a>
             ))}
-            <button className="px-6 py-2.5 bg-gradient-to-r from-blue-600 to-cyan-500 text-white rounded-full hover:shadow-lg transition-shadow">
+            <Link href="#contact" className="px-6 py-2.5 bg-gradient-to-r from-blue-600 to-cyan-500 text-white rounded-full hover:shadow-lg transition-shadow">
               Contact Us
-            </button>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -69,9 +72,9 @@ import { useState } from 'react';
                 {link.label}
               </a>
             ))}
-            <button className="w-full px-6 py-2.5 bg-gradient-to-r from-blue-600 to-cyan-500 text-white rounded-full hover:shadow-lg transition-shadow">
+            <Link href="#contact"  className="w-full px-6 py-2.5 bg-gradient-to-r from-blue-600 to-cyan-500 text-white rounded-full hover:shadow-lg transition-shadow">
               Contact Us
-            </button>
+            </Link>
           </div>
         </div>
       )}

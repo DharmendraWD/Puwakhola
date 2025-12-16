@@ -18,39 +18,23 @@ const FAQSection = () => {
 
 let data= [
   {
-question: "1. What is the Aayu Malun Khola Hydropower Project?",
-answer:"The Aayu Malun Khola Hydropower Project is a 21 MW run-of-river hydropower facility located in Okhaldhunga and Solukhumbu districts, Koshi Province. The project harnesses the hydrological potential of Malun Khola to generate reliable, clean, and renewable electricity for integration into Nepal’s national grid.",
+question: "1. What is the PuwaKhola Hydropower Project?",
+answer:"The PuwaKhola Hydropower Project is a 4MW run-of-river hydropower facility located in Okhaldhunga and Solukhumbu districts, Koshi Province. The project harnesses the hydrological potential of Malun Khola to generate reliable, clean, and renewable electricity for integration into Nepal’s national grid.",
 id:1
   },
   {
 question: "2.Who is the project developer?",
-answer:"The project is being developed by Aayu Malun Hydropower Pvt. Ltd., a professionally managed private company with extensive experience in hydropower planning, construction, and project execution. The company is supported by seasoned technical experts, established contractors, and national financial institutions.",
+answer:"The project is being developed by Puwakhola Hydropower Pvt. Ltd., a professionally managed private company with extensive experience in hydropower planning, construction, and project execution. The company is supported by seasoned technical experts, established contractors, and national financial institutions.",
 id:2
   },
   {
-question: "3. What is the scheduled completion timeline?",
-answer:"The project’s Required Commercial Operation Date (RCOD) is 11 September 2025. Civil, hydro-mechanical, and electro-mechanical works are progressing in accordance with the approved implementation schedule, with several components already completed and others in advanced stages of construction.",
+question: "3. What is the project's primary objective?",
+answer:"The primary objective of the project is to provide reliable and clean electricity to Nepal's national grid, ensuring long-term sustainability and prosperity for the country's people.",
 id:3
   },
-  {
-question: "4. What are the key technical specifications of the project?",
-answer:`Key technical parameters include:
-Installed Capacity: 21 MW
-Turbine Type: Horizontal Pelton (3 units)
-Net Head: 524.1 meters
-Design Discharge: 4.52 m³/s
-Headrace Tunnel Length: 1,903.14 meters
-Penstock Length: 1,656.30 meters
-Transmission Line: 132 kV, 18 km (Tingla Substation) 
 
-These components are designed in accordance with international standards and Nepal Electricity Authority (NEA) requirements.`,
-id:4
-  },
-  {
-question: " 5. How does the project contribute to local development and national energy security?",
-answer:` The project significantly enhances regional socio-economic development through employment generation, improved access infrastructure, and local service engagement. At the national level, it contributes approximately 112.58 GWh of clean energy annually, supporting energy security, reducing import dependency, and advancing Nepal’s renewable energy targets.`,
-id:5
-  },
+
+
 ]
 
 
@@ -111,7 +95,7 @@ id:5
             <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 leading-tight">
               Some questions, <br />some answers.
             </h2>
-            <p className="text-lg text-gray-700 max-w-sm mx-auto lg:mx-0">
+            <p className="text-lg text-center text-gray-700 max-w-sm mx-auto lg:mx-0">
               Have a look at my most frequently asked questions.
             </p>
           </div>

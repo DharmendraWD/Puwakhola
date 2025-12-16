@@ -1,4 +1,5 @@
 import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin, Zap } from 'lucide-react';
+import Link from 'next/link';
 
  function Footer() {
   const quickLinks = [
@@ -61,7 +62,7 @@ import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin, Zap } from
           </div>
 
           {/* Resources */}
-          <div>
+          {/* <div>
             <h3 className="text-lg mb-4">Resources</h3>
             <ul className="space-y-3">
               {resources.map((link) => (
@@ -72,7 +73,7 @@ import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin, Zap } from
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
           {/* Contact */}
           <div>
@@ -80,15 +81,15 @@ import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin, Zap } from
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <Mail className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" />
-                <span className="text-gray-400">info@puwakhola.com.np</span>
+                <span className="text-gray-400">puwakholahydropower@gmail.com</span>
               </li>
               <li className="flex items-start gap-3">
                 <Phone className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" />
-                <span className="text-gray-400">+977 1 234 5678</span>
+                <span className="text-gray-400">01-4102710</span>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" />
-                <span className="text-gray-400">Kathmandu, Nepal</span>
+                <Link href="https://maps.app.goo.gl/zBEoZtxCqZJDw8mH6" target='_blank' className="text-gray-400">Durga bhawan, Anamnagar, Kathmandu</Link>
               </li>
             </ul>
           </div>
@@ -96,18 +97,18 @@ import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin, Zap } from
 
         {/* Bottom bar */}
         <div className="pt-8 border-t border-gray-800">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-gray-400 text-sm">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-4">
+            <p className="text-gray-400 text-sm text-center">
               © 2024 Puwakhola Hydropower. All rights reserved.
             </p>
-            <div className="flex gap-6 text-sm">
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+            {/* <div className="flex gap-6 text-sm">
+              <Link href="/policy" className="text-gray-400 hover:text-blue-400 transition-colors">
                 Privacy Policy
-              </a>
+              </Link>
               <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
                 Terms of Service
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

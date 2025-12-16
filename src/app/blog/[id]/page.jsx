@@ -18,55 +18,33 @@ const STATISTICS = [
     { value: "5%", label: "market shares growth" },
 ];
 
-  let data =  [
+  const data = [
     {
-      title:"Puwa Khola 1 Hydropower To Develop 21 MW Aayu Malun Khola Hydropower Project In Okhaldhunga",
-      desc:`Puwa Khola 1 Hydropower Limited is going to build the 21 MW Aayu Malun Khola Hydropower Project in Okhaldhunga district. For this purpose, the company has already received the construction license from the Department of Electricity Development.
-
-The department granted the construction permit to the company on Mangsir 6, 2079 BS. The license has a validity until Mangsir 5, 2114 BS.
-
-The department has provided the construction license to the promoter company on the basis of the environmental impact assessment report and study report of the project approved by the Ministry of Forest and Environment.
-
-Before issuing the license, the Department Of Electricity Development had issued a notice requesting the stakeholders to submit written opinions/suggestions within 35 days if there is any adverse impact due to the construction and operation of this project.
-
-The project is a run-of-the-river (ROR) type project. It will be built on the Malun River in Okhaldhunga district.
-
-Puwa Khola 1 Hydropower is currently operating a 4 MW Puwa Khola-1 Hydropower Project in Illam District. The project began commercial electricity production from Ashwin 23, 2074 BS.
-
-`,
-id:2,
-img:bimg1
+      id: 1,
+      title: 'Puwakhola Achieves Record Power Generation',
+      desc: 'Our facilities reached a milestone with 100% operational capacity throughout the monsoon season, demonstrating exceptional reliability.',
+      date: 'December 5, 2024',
+      category: '',
+      img: 'https://images.unsplash.com/photo-1688589089961-86b830d990b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZW5ld2FibGUlMjBlbmVyZ3klMjBuZXdzfGVufDF8fHx8MTc2NTM1MDk4Mnww&ixlib=rb-4.1.0&q=80&w=1080',
     },
     {
-      title:"Puwa Khola 1 Hydropower To Develop 21 MW Aayu Malun Khola Hydropower Project In Okhaldhunga",
-      desc:`Puwa Khola 1 Hydropower Limited is going to build the 21 MW Aayu Malun Khola Hydropower Project in Okhaldhunga district. For this purpose, the company has already received the construction license from the Department of Electricity Development.
+      id: 2,
+      title: 'New Community Development Initiative Launched',
+      desc: 'Partnership program brings education and infrastructure improvements to local communities in our project areas.',
+      date: 'November 28, 2024',
+      category: '',
+      img: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbmdpbmVlcmluZyUyMHRlYW18ZW58MXx8fHwxNzY1Mjc1NjY2fDA&ixlib=rb-4.1.0&q=80&w=1080',
+    },
+    {
+      id: 3,
+      title: 'Expansion Project Receives Environmental Clearance',
+      desc: 'Our upcoming 20 MW expansion has been approved following rigorous environmental impact assessments.',
+      date: 'November 15, 2024',
+      category: '',
+      img: 'https://images.unsplash.com/photo-1487875961445-47a00398c267?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdXN0YWluYWJsZSUyMHRlY2hub2xvZ3l8ZW58MXx8fHwxNzY1MjY1NzQ3fDA&ixlib=rb-4.1.0&q=80&w=1080',
+    },
+  ];
 
-The department granted the construction permit to the company on Mangsir 6, 2079 BS. The license has a validity until Mangsir 5, 2114 BS.
-
-The department has provided the construction license to the promoter company on the basis of the environmental impact assessment report and study report of the project approved by the Ministry of Forest and Environment.
-
-Before issuing the license, the Department Of Electricity Development had issued a notice requesting the stakeholders to submit written opinions/suggestions within 35 days if there is any adverse impact due to the construction and operation of this project.
-
-The project is a run-of-the-river (ROR) type project. It will be built on the Malun River in Okhaldhunga district.
-
-Puwa Khola 1 Hydropower is currently operating a 4 MW Puwa Khola-1 Hydropower Project in Illam District. The project began commercial electricity production from Ashwin 23, 2074 BS.
-
-`,
-id:1,
-img:bimg1
-    }
-  ]
-const StatCard = ({ stat }) => (
-    
-    <div className="bg-[#e9e9e9] p-6 rounded-[24px] shadow-2xl text-center h-full transition duration-300 hover:shadow-blue-300/50">
-        <p className="text-4xl sm:text-5xl font-extrabold text-indigo-700 mb-1">
-            {stat.value}
-        </p>
-        <p className="text-sm font-medium text-gray-500 uppercase tracking-wider">
-            {stat.label}
-        </p>
-    </div>
-);
 
 export default async  function NewsDets(props) {
     const { params } = props;
@@ -77,7 +55,7 @@ export default async  function NewsDets(props) {
 
 
 
-    const backgroundImage = data[id].img.src || wp;
+    const backgroundImage = data[id].img || wp;
 
     return (
         <>
@@ -143,7 +121,7 @@ export default async  function NewsDets(props) {
     </button>
     </Link> */}
 </div>
-<div style={{justifyItems:"center"}} className="space-y-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 bg-white">
+<div style={{justifyItems:"center"}} className="space-y-8 mb-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 bg-white">
     
 
    {
@@ -191,28 +169,6 @@ export default async  function NewsDets(props) {
 
 
 
-
-// Newsletter Sidebar Component
-const NewsletterSidebar = () => {
-    return (
-         <>
-        {/* // The container uses a large, vibrant background for emphasis */}
-        <div className="p-8 bg-indigo-700 rounded-3xl sticky top-8 md:top-12 self-start shadow-xl">
-            <h3 className="text-2xl font-bold text-white mb-2">
-                Join newsletter
-            </h3>
-            <p className="text-indigo-200 text-sm mb-6">
-                Stay up to date with new case studies. We promise no spam, just good content.
-            </p>
-
-
-<Form></Form>
-        </div>
-       
-        
-        </>
-    );
-};
 
 // Main Case Study Content Component
 const NewsStudy = async({data, id}) => {
