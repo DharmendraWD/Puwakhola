@@ -144,7 +144,7 @@ const projects = [
            Projects
           </div>
           <h2 className="text-4xl lg:text-5xl text-gray-900 mb-6">
-            Project Successfully   <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">Completed</span> Milestone
+            Our Major <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">Projects</span> 
           </h2>
         </div>
 

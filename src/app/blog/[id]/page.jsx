@@ -11,37 +11,75 @@ import bimg1 from "../../../../public/img/blog/blog1.jpg"
 
 
 
-const STATISTICS = [
-    { value: "500k", label: "cost savings" },
-    { value: "$500k", label: "cost savings" },
-    { value: "95%", label: "customer satisfactions" },
-    { value: "5%", label: "market shares growth" },
-];
+import blog1 from "../../../../public/img/blog/blog2.jpg"
+import blog2 from "../../../../public/img/blog/blog1.jpg"
+import blog3 from "../../../../public/img/blog/blog4.jpg"
+
+
+
 
   const data = [
     {
       id: 1,
-      title: 'Puwakhola Achieves Record Power Generation',
-      desc: 'Our facilities reached a milestone with 100% operational capacity throughout the monsoon season, demonstrating exceptional reliability.',
-      date: 'December 5, 2024',
+      title: 'Puwa Khola- 1 Hydropower Appoints LS Capital as IPO Issue Manager',
+      desc: `Puwa Khola- 1 Hydropower Limited has appointed LS Capital Limited as the IPO issue and sales manager for issuing 19,46,660 ordinary shares to the general public at a face value of Rs 100 per share.
+ 
+ <br />
+ <br>
+ <br>
+ The agreement was signed by Managing Director Mr. Kadam KC on behalf of Puwa Khola-1 Hydropower and Mr. Bijaya Lal Shrestha, Chief Executive Officer on behalf of Laxmi Sunrise Capital Limited. Puwa Khola- 1 Hydropower Limited's 4 MW hydropower project located in Ilam district has been completed and put into operation.
+ 
+
+
+
+      `,
+      date: 'Thu, Jan 25, 2024',
       category: '',
-      img: 'https://images.unsplash.com/photo-1688589089961-86b830d990b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZW5ld2FibGUlMjBlbmVyZ3klMjBuZXdzfGVufDF8fHx8MTc2NTM1MDk4Mnww&ixlib=rb-4.1.0&q=80&w=1080',
+      img: blog1.src,
     },
     {
       id: 2,
-      title: 'New Community Development Initiative Launched',
-      desc: 'Partnership program brings education and infrastructure improvements to local communities in our project areas.',
-      date: 'November 28, 2024',
+      title: 'Puwa Khola 1 Hydropower To Develop 21 MW Aayu Malun Khola Hydropower Project In Okhaldhunga',
+      desc: `Puwa Khola 1 Hydropower Limited is going to build the 21 MW Aayu Malun Khola Hydropower Project in Okhaldhunga district. For this purpose, the company has already received the construction license from the Department of Electricity Development.
+      <br>
+      <br>
+      <br>
+      The department granted the construction permit to the company on Mangsir 6, 2079 BS. The license has a validity until Mangsir 5, 2114 BS.
+
+The department has provided the construction license to the promoter company on the basis of the environmental impact assessment report and study report of the project approved by the Ministry of Forest and Environment.
+
+<br>
+<br>
+<br>
+Before issuing the license, the Department Of Electricity Development had issued a notice requesting the stakeholders to submit written opinions/suggestions within 35 days if there is any adverse impact due to the construction and operation of this project.
+
+The project is a run-of-the-river (ROR) type project. It will be built on the Malun River in Okhaldhunga district.
+
+Puwa Khola 1 Hydropower is currently operating a 4 MW Puwa Khola-1 Hydropower Project in Illam District. The project began commercial electricity production from Ashwin 23, 2074 BS.
+
+
+      `,
+      date: 'Jan 22, 2023',
       category: '',
-      img: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbmdpbmVlcmluZyUyMHRlYW18ZW58MXx8fHwxNzY1Mjc1NjY2fDA&ixlib=rb-4.1.0&q=80&w=1080',
+      img: blog2.src,
     },
     {
       id: 3,
-      title: 'Expansion Project Receives Environmental Clearance',
-      desc: 'Our upcoming 20 MW expansion has been approved following rigorous environmental impact assessments.',
-      date: 'November 15, 2024',
+      title: 'पुवा खोला–वान हाईड्रोपावरले आईपीओ निष्कासन गर्ने',
+      desc: `
+      काठमाण्डौ । पुवा खोला–वान हाईड्रोपावर लिमिटेडले आईपीओ निष्कासन गर्ने भएको छ । कम्पनीले आईपीओ निष्कासनको प्रस्ताव पारित गर्न विशेष साधारण सभा डाकेको छ ।  
+उक्त विशेष सभा यही असार २७ गते काठमाण्डौको अनामनगरमा रहेको कम्पनीको कार्यालयमा बिहान ११ बजेदेखि सुरु हुनेछ । 
+<br>
+<br>
+<br>
+सभामा कम्पनीको आईपीओ निष्कासनको रकम वृद्धि गरी आईपीओ जारी गर्ने, आईपीओबाट प्राप्त पूँजीको उपयोगबारे निर्णय गर्ने र चुक्तापूँजी वृद्धिको उपयोगिताको विशेषमा निर्णय गर्ने जस्ता विशेष प्रस्तावहरु पारित गरिनेछन् ।  
+
+यस्तै कम्पनीको प्रबन्धपत्र तथा नियमावली संशोधन गर्ने प्रस्ताव समेत पारित गरिनेछ ।     
+
+      `,
+      date: 'बिहीबार, असार २६,२०८२',
       category: '',
-      img: 'https://images.unsplash.com/photo-1487875961445-47a00398c267?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdXN0YWluYWJsZSUyMHRlY2hub2xvZ3l8ZW58MXx8fHwxNzY1MjY1NzQ3fDA&ixlib=rb-4.1.0&q=80&w=1080',
+      img: blog3.src,
     },
   ];
 
